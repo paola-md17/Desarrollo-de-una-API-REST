@@ -17,7 +17,7 @@ Desarrollado como proyecto integrador para la carrera de **Desarrollo de Softwar
 
 ---
 
-![Evidencia API REST](./assets/api_rest.jpeg)
+![Evidencia API REST](./img/api_rest.jpeg)
 
 
 ## 📂 Estructura del Proyecto
