@@ -1,0 +1,23 @@
+postman request POST 'http://localhost:5000/auth/login' \
+--header 'Content-Type: application/json' \
+--body '{
+    "correo": "admin@utng.edu.mx",
+    "password": "123"
+}'
+
+postman request POST 'http://localhost:5000/tienda/productos' \
+--header 'Content-Type: application/json' \
+--body '{
+    "nombre": "Sudadera UTNG",
+    "precio": 450.0,
+    "stock": 20
+}'
+
+postman request POST 'http://localhost:5000/tienda/ventas' \
+--header 'Content-Type: application/json' \
+--body '{
+    "producto_id": 1,
+    "cantidad": 2
+}'
+
+postman request GET 'http://localhost:5000/tienda/reporte'
