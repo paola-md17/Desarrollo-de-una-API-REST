@@ -12,6 +12,7 @@ class Estudiante(db.Model):
     carrera = db.Column(db.String(100), nullable=False)
     semestre = db.Column(db.Integer, default=1)
     fecha_registro = db.Column(db.DateTime, default=datetime.utcnow)
+    activo = db.Column(db.Boolean, default=True)
 
     def to_dict(self):
         """Convierte el objeto en un diccionario para enviarlo como JSON."""
